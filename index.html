@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlintSite | Your Website. Done for You.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #3c7cbd;
+      color: #111827;
+    }
+    header {
+      padding: 2rem;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #3B82F6;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #4B5563;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background: #3B82F6;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background: white;
+    }
+    .feature {
+      text-align: center;
+      padding: 1rem;
+    }
+    .feature h3 {
+      color: #3B82F6;
+      margin-bottom: 0.5rem;
+    }
+    .pricing {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .price-box {
+      background: white;
+      padding: 2rem;
+      display: inline-block;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .price-box h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .price-box ul {
+      text-align: left;
+      margin: 1rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .price-box ul li {
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #6B7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">GlintSite ⚡</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Your Website. Done for You.</h1>
+    <p>We build and host simple, mobile-friendly websites for salons, gyms, and service businesses — all under one monthly plan.</p>
+    <button onclick="window.location='#pricing'">See Pricing</button>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature">
+      <h3>🧾 Online Booking</h3>
+      <p>Let your customers book services anytime, anywhere.</p>
+    </div>
+    <div class="feature">
+      <h3>📱 Mobile-Optimized</h3>
+      <p>Look perfect on all devices — phones, tablets, and desktops.</p>
+    </div>
+    <div class="feature">
+      <h3>🛠 Fully Managed</h3>
+      <p>No tech skills needed. We handle everything for you.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="price-box">
+      <h2>$50/month</h2>
+      <ul>
+        <li>✓ 1-page website</li>
+        <li>✓ Booking form integration</li>
+        <li>✓ Hosting included</li>
+        <li>✓ Free trial (30 days)</li>
+        <li>✓ Support via WhatsApp</li>
+      </ul>
+      <button onclick="window.location='/checkout.html'">Subscribe Now</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 GlintSite. All rights reserved.
+  </footer>
+</body>
+</html>
