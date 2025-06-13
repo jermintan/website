@@ -1,153 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlintSite | Your Website. Done for You.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #F9FAFB;
-      color: #111827;
-    }
-    header {
-      padding: 2rem;
-      background: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #3B82F6;
-    }
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #374151;
-      font-weight: 500;
-    }
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #4B5563;
-      margin-bottom: 2rem;
-    }
-    .hero button {
-      background: #3B82F6;
-      color: white;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 0.5rem;
-      cursor: pointer;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 3rem 2rem;
-      background: white;
-    }
-    .feature {
-      text-align: center;
-      padding: 1rem;
-    }
-    .feature h3 {
-      color: #3B82F6;
-      margin-bottom: 0.5rem;
-    }
-    .pricing {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .price-box {
-      background: white;
-      padding: 2rem;
-      display: inline-block;
-      border-radius: 1rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
-    .price-box h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .price-box ul {
-      text-align: left;
-      margin: 1rem 0;
-      padding: 0;
-      list-style: none;
-    }
-    .price-box ul li {
-      margin: 0.5rem 0;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #6B7280;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvorry | Websites for Service Businesses</title>
+
+    <!-- Google Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="logo">GlintSite ⚡</div>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Your Website. Done for You.</h1>
-    <p>We build and host simple, mobile-friendly websites for salons, gyms, and service businesses — all under one monthly plan.</p>
-    <button onclick="window.location='#pricing'">See Pricing</button>
-  </section>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">solvorry</a>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#process">How It Works</a>
+                <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+            </nav>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
 
-  <section id="features" class="features">
-    <div class="feature">
-      <h3>🧾 Online Booking</h3>
-      <p>Let your customers book services anytime, anywhere.</p>
-    </div>
-    <div class="feature">
-      <h3>📱 Mobile-Optimized</h3>
-      <p>Look perfect on all devices — phones, tablets, and desktops.</p>
-    </div>
-    <div class="feature">
-      <h3>🛠 Fully Managed</h3>
-      <p>No tech skills needed. We handle everything for you.</p>
-    </div>
-  </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Finally, a Website That Works as Hard as You Do.</h1>
+                    <p class="subtitle">We build beautiful, simple websites for service businesses, complete with automated booking. So you can get back to what you do best.</p>
+                    <a href="#contact" class="btn btn-primary">Start Booking Clients</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Image Credit: Leeloo Thefirst from Pexels -->
+                    <img src="https://images.pexels.com/photos/8089255/pexels-photo-8089255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="A modern laptop showing a clean website design in a bright workspace.">
+                </div>
+            </div>
+        </section>
 
-  <section id="pricing" class="pricing">
-    <div class="price-box">
-      <h2>$50/month</h2>
-      <ul>
-        <li>✓ 1-page website</li>
-        <li>✓ Booking form integration</li>
-        <li>✓ Hosting included</li>
-        <li>✓ Free trial (30 days)</li>
-        <li>✓ Support via WhatsApp</li>
-      </ul>
-      <button onclick="window.location='/checkout.html'">Subscribe Now</button>
-    </div>
-  </section>
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <p>WE INTEGRATE WITH THE TOOLS YOU ALREADY USE AND TRUST</p>
+                <div class="partner-logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Calendly_company_logo.png/250px-Calendly_company_logo.png" alt="Calendly Logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe Logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/120px-Google_Calendar_icon_%282020%29.svg.png" alt="Google Calendar Logo">
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    © 2025 GlintSite. All rights reserved.
-  </footer>
+        <!-- How It Works Section -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Path to Effortless Bookings</h2>
+                    <p>Our process is designed to be simple, fast, and transparent.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Discovery Call</h3>
+                        <p>We'll chat about your business, your clients, and your goals to make sure we're a perfect fit.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Design & Build</h3>
+                        <p>We design a beautiful website and integrate your booking system. You give feedback, we refine.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Launch & Grow</h3>
+                        <p>We go live! Your new website is ready to attract clients and automate your schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Features Section -->
+        <section id="services" class="features-section">
+            <div class="container features-grid">
+                <div class="features-image">
+                    <!-- Image credit: George Milton from Pexels -->
+                    <img src="https://images.pexels.com/photos/7031408/pexels-photo-7031408.jpeg" alt="Owner of a salon smiling and looking at her appointment book.">
+                </div>
+                <div class="features-text">
+                    <h2>Websites for owners who would rather be serving clients than updating plugins.</h2>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> A stunning, modern design that reflects your brand's quality.</li>
+                        <li><i class="fas fa-check"></i> Seamless Calendly integration so clients can book in seconds.</li>
+                        <li><i class="fas fa-check"></i> Mobile-first design that looks great on any device.</li>
+                        <li><i class="fas fa-check"></i> SEO-ready to help local customers find you on Google.</li>
+                        <li><i class="fas fa-check"></i> Simple, fast, and secure—with no technical headaches.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <h2>Stop wrestling with technology.<br>Start growing your business.</h2>
+                <p>Let's build a website that fills your calendar so you can focus on what you love.</p>
+                <a href="mailto:hello@solvorry.com" class="btn btn-primary">Schedule Your Free Discovery Call</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo">solvorry</a>
+            <p>© 2024 Solvorry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
